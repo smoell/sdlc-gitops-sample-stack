@@ -6,26 +6,26 @@ configMapGenerator:
     behavior: merge
     literals:
       - DD_ENV=dev
-      - DD_VERSION=latest
+      - DD_VERSION=24e9ad5cf79f95b11943abe5a8e73781a35fa65b
 
   - name: pass-summary-api-config
     behavior: merge
     literals:
       - DD_ENV=dev
-      - DD_VERSION=latest
+      - DD_VERSION=24e9ad5cf79f95b11943abe5a8e73781a35fa65b
 
   - name: pass-image-api-config
     behavior: merge
     literals:
       - DD_ENV=dev
-      - DD_VERSION=latest
+      - DD_VERSION=24e9ad5cf79f95b11943abe5a8e73781a35fa65b
 
 images:
   - name: ghcr.io/smoell/sdlc-gitops-sample-stack/pass-api
-    newTag: "latest"
+    newTag: "24e9ad5cf79f95b11943abe5a8e73781a35fa65b"
 
   - name: ghcr.io/smoell/sdlc-gitops-sample-stack/pass-summary-api
-    newTag: "latest"
+    newTag: "24e9ad5cf79f95b11943abe5a8e73781a35fa65b"
 
   - name: ghcr.io/smoell/sdlc-gitops-sample-stack/pass-image-api
-    newTag: "latest"
+    newTag: "24e9ad5cf79f95b11943abe5a8e73781a35fa65b"
